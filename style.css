@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  color: bisque;
+  margin: 0;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(44, 42, 42, 0.486);
+  width: 100%;
+  min-height: 70px;
+  padding: 10px 300px;
+}
+
+nav .menu {
+  position: absolute;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 20%;
+  top: 1%;
+  list-style: none;
+}
+nav > ul > li a {
+  color: bisque;
+  font-size: 20px;
+  text-decoration: none;
+}
+ul a {
+  transition: 0.5s;
+}
+ul a:hover {
+  background: linear-gradient(#ff8660, #d5491d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 {
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+  left: 20%;
+}
+h2 {
+  background: linear-gradient(#f3805d00, #ff3c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 50px;
+}
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.about img:hover {
+  box-shadow:
+    0 0 10px #d5491d,
+    0 0 20px #d5491d,
+    0 0 40px rgba(213, 73, 29, 0.5);
+}
+.tech .icon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.tech svg {
+  border-radius: 5px;
+  width: 40px;
+  fill: #c5c5c5;
+  height: 40px;
+}
+
+.hero button {
+  border-radius: 30px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.contactme {
+  border-width: 0;
+}
+.contactme:hover {
+  background-color: black;
+  color: bisque;
+  border-color: bisque;
+  border-width: 2px;
+}
+.download {
+  background-color: black;
+  color: bisque;
+  border-color: bisque;
+}
+.download:hover {
+  background-color: bisque;
+  color: black;
+}
+.projects h3 {
+  background: linear-gradient(#ff8660, #d5491d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.projects .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.projects .container div {
+  background-color: rgba(44, 42, 42, 0.486);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.pj1,
+.pj2 {
+  position: relative;
+}
+.pj1 img {
+  position: absolute;
+  width: 300px;
+  height: 160px;
+  left: 0%;
+  top: 0%;
+  bottom: 10%;
+  border-radius: 10px;
+}
+.pj2 img {
+  position: absolute;
+  width: 300px;
+  height: 160px;
+  left: 0%;
+  top: 0%;
+  bottom: 10%;
+  border-radius: 10px;
+}
+.pj1 svg {
+  position: absolute;
+  fill: aliceblue;
+  bottom: 5%;
+  right: 2%;
+}
+.pj2 svg {
+  position: absolute;
+  fill: aliceblue;
+  bottom: 5%;
+  right: 2%;
+}
+
+.pj2 :nth-child(2) {
+  position: absolute;
+  color: aliceblue;
+  bottom: 7%;
+  left: 5%;
+  font-size: 7px;
+}
+.pj2 :nth-child(3) {
+  position: absolute;
+  color: aliceblue;
+  top: 82%;
+  left: 5%;
+  font-size: 15px;
+  font-weight: 800;
+}
+.pj1 :nth-child(2) {
+  position: absolute;
+  color: aliceblue;
+  bottom: 7%;
+  left: 5%;
+  font-size: 7px;
+}
+.pj1 :nth-child(3) {
+  position: absolute;
+  color: aliceblue;
+  top: 82%;
+  left: 5%;
+  font-size: 15px;
+  font-weight: 800;
+}
+.container a {
+  transition: transform 0.5s;
+}
+.atime1:hover {
+  transform: scale(1.1);
+}
+.atime2:hover {
+  transform: scale(1.1);
+}
+
+/* footer {
+  background-color: rgba(44, 42, 42, 0.486);
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+} */
+footer {
+  background-color: rgba(44, 42, 42, 0.486);
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 40px 20px;
+}
+.ctack {
+  max-width: 600px;
+}
+.ctack h3 {
+  font-size: 2rem;
+}
+.ctack p {
+  line-height: 1.8;
+}
+.ctack svg {
+  width: 25px;
+  height: 25px;
+}
+.ctack div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ctack {
+  max-width: 600px;
+}
+
+.ctack h3 {
+  font-size: 2rem;
+}
+
+.ctack p {
+  line-height: 1.8;
+}
+
+.ctack div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.ctack svg {
+  width: 25px;
+  height: 25px;
+  fill: bisque;
+}
+.endsocial {
+  padding: 50px;
+}
+
+.endsocial ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+}
+
+.end svg {
+  width: 25px;
+  height: 25px;
+  fill: bisque;
+  cursor: pointer;
+  transition: 0.3s;
+}
