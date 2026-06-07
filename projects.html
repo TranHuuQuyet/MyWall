@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Projects | Dashboard</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,21 +19,21 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><h1>Orange_Dev</h1></a>
+      <h1>Projects</h1>
     </header>
     <main>
       <section class="sidebar">
         <nav>
           <ul class="menu-sidebar">
             <li>
-              <a href="admin.html" class="active">
+              <a href="admin.html">
                 <i class="fa-solid fa-gauge"></i>
                 <span>Dashboard</span>
               </a>
             </li>
 
             <li>
-              <a href="projects.html">
+              <a href="projects.html" class="active">
                 <i class="fa-solid fa-folder-open"></i>
                 <span>Projects</span>
               </a>
@@ -70,42 +70,66 @@
         </nav>
       </section>
       <section class="content">
-        <h2>Welcome to the Dashboard</h2>
-        <div class="container" id="main-board">
+        <div class="item">
+          <h2>Set up Project</h2>
+          <button class="add-btn">+ Add</button>
+        </div>
+        <div class="container">
           <div class="management-card">
-            <strong>PROFILE</strong>
-            <p>Avatar, name, bio, email</p>
-            <strong>Edit</strong>
-          </div>
-          <div class="management-card">
-            <strong>CONTENT</strong>
+            <strong>PROJECT</strong>
             <table>
               <tr>
-                <td>Projects</td>
-                <td>2</td>
-                <td><a href="projects.html">Manage</a></td>
+                <td>Name Project</td>
+                <td>FNB stock system</td>
+                <td><button class="adsave">Edit</button></td>
               </tr>
               <tr>
-                <td>Skills</td>
-                <td>5</td>
-                <td><a href="skills.html">Manage</a></td>
+                <td>Tech</td>
+                <td>TS</td>
+                <td><button class="adsave">Edit</button></td>
               </tr>
               <tr>
-                <td>Experience</td>
-                <td>0</td>
-                <td><a href="experience.html">Manage</a></td>
-              </tr>
-              <tr>
-                <td>Contact</td>
-                <td>4</td>
-                <td><a href="contact.html">Manage</a></td>
+                <td>Link</td>
+                <td>
+                  <a href="https://github.com/TranHuuQuyet/fnb-stock-system"
+                    >View Repository</a
+                  >
+                </td>
+                <td><button class="adsave">Edit</button></td>
               </tr>
             </table>
+            <div class="actions">
+              <button class="adsave">Add</button>
+              <button class="adsave">Save</button>
+            </div>
           </div>
           <div class="management-card">
-            <strong>WEBSITE </strong>
-            <p>Portfolio is ready</p>
-            <p><a href="index.html">Preview site</a></p>
+            <strong>PROJECT</strong>
+            <table>
+              <tr>
+                <td>Name Project</td>
+                <td>Net manager</td>
+                <td><button class="adsave">Edit</button></td>
+              </tr>
+              <tr>
+                <td>Tech</td>
+                <td>C#</td>
+                <td><button class="adsave">Edit</button></td>
+              </tr>
+              <tr>
+                <td>Link</td>
+                <td>
+                  <a href="https://github.com/TranHuuQuyet/net-manager"
+                    >View Repository</a
+                  >
+                </td>
+                <td><button class="adsave">Edit</button></td>
+              </tr>
+            </table>
+            <div class="actions">
+              <button class="adsave">Add</button>
+              <button class="adsave">Save</button>
+            </div>
           </div>
         </div>
       </section>

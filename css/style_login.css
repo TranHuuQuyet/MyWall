@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --primary-gradient: linear-gradient(#ff8660, #d5491d);
+  --primary-color: rgb(255, 255, 255);
+}
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
+  color: #c5c5c5;
 
+  position: relative;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -11,33 +17,33 @@ body {
   height: 100vh;
 }
 h1 {
-  background: linear-gradient(#ff8660, #d5491d);
+  background: var(--primary-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Bitcount Grid Single", system-ui;
-  font-weight: bold;
+  font-family: "Dancing Script", cursive;
 }
 h2 {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 main {
-  position: relative;
   font-family: "Noto Sans", sans-serif;
   font-weight: 1000;
-  background-color: rgba(44, 42, 42, 0.486);
+  background-color: rgba(32, 32, 32, 0.92);
   width: 400px;
   height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-style: solid;
   border-radius: 15px;
-  color: #ff8660;
-  border: 2px solid #ffffff;
-  background: transparent;
+  border-width: 1px;
+  border-color: #ff8660;
 }
 input {
+  background: #111;
+  color: #ffff;
   width: 320px;
   height: 50px;
   margin: 5px 0;
@@ -48,7 +54,7 @@ input {
   height: 50px;
   width: 320px;
   margin-top: 20px;
-  background-color: rgb(10, 111, 114);
+  background: var(--primary-gradient);
   border-width: 0;
   border-radius: 5px;
   color: white;
@@ -57,16 +63,32 @@ input {
   cursor: pointer;
 }
 .click:hover {
-  background-color: rgb(10, 111, 114, 0.8);
+  background: linear-gradient(#ff8660, #d5481d8a);
 }
 main p {
   margin-top: 30px;
-  color: rgb(209, 63, 63);
+  color: #c5c5c5;
+  cursor: pointer;
 }
-main svg {
-  position: absolute;
+main p:hover {
+  color: #ff8660;
+}
+body > a {
+  position: fixed;
   width: 32px;
   height: 32px;
   top: 5%;
-  left: 10%;
+  left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+body > a svg {
+  font-size: 32px;
+}
+body > a:hover {
+  background: #73797c38;
+  border-radius: 20px;
 }

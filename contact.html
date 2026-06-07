@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Contact | Dashboard</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,14 +19,14 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><h1>Orange_Dev</h1></a>
+      <h1>Contact</h1>
     </header>
     <main>
       <section class="sidebar">
         <nav>
           <ul class="menu-sidebar">
             <li>
-              <a href="admin.html" class="active">
+              <a href="admin.html">
                 <i class="fa-solid fa-gauge"></i>
                 <span>Dashboard</span>
               </a>
@@ -54,7 +54,7 @@
             </li>
 
             <li>
-              <a href="contact.html">
+              <a href="contact.html" class="active">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Contact</span>
               </a>
@@ -70,42 +70,59 @@
         </nav>
       </section>
       <section class="content">
-        <h2>Welcome to the Dashboard</h2>
-        <div class="container" id="main-board">
+        <div class="item">
+          <h2>Set up Contact</h2>
+          <button class="add-btn">+ Add</button>
+        </div>
+        <div class="container">
           <div class="management-card">
-            <strong>PROFILE</strong>
-            <p>Avatar, name, bio, email</p>
-            <strong>Edit</strong>
-          </div>
-          <div class="management-card">
-            <strong>CONTENT</strong>
+            <strong>Contact Info</strong>
             <table>
               <tr>
-                <td>Projects</td>
-                <td>2</td>
-                <td><a href="projects.html">Manage</a></td>
+                <td>Email</td>
+                <td>huuquyet120406@gmail.com</td>
+                <td><button class="adsave">Edit</button></td>
               </tr>
               <tr>
-                <td>Skills</td>
-                <td>5</td>
-                <td><a href="skills.html">Manage</a></td>
+                <td>Phone number</td>
+                <td>0868027169</td>
+                <td><button class="adsave">Edit</button></td>
               </tr>
               <tr>
-                <td>Experience</td>
-                <td>0</td>
-                <td><a href="experience.html">Manage</a></td>
-              </tr>
-              <tr>
-                <td>Contact</td>
-                <td>4</td>
-                <td><a href="contact.html">Manage</a></td>
+                <td>Location</td>
+                <td>HOCHIMINH City</td>
+                <td><button class="adsave">Edit</button></td>
               </tr>
             </table>
+            <div class="actions">
+              <button class="adsave">Add</button>
+              <button class="adsave">Save</button>
+            </div>
           </div>
           <div class="management-card">
-            <strong>WEBSITE </strong>
-            <p>Portfolio is ready</p>
-            <p><a href="index.html">Preview site</a></p>
+            <strong>SOCIALS LINK</strong>
+            <table>
+              <tr>
+                <td>Github</td>
+                <td><a href="#">Link</a></td>
+                <td><button class="adsave">Edit</button></td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td><a href="#">Link</a></td>
+                <td><button class="adsave">Edit</button></td>
+              </tr>
+              <tr>
+                <td>Youtube</td>
+                <td><a href="#">Link</a></td>
+                <td><button class="adsave">Edit</button></td>
+              </tr>
+            </table>
+
+            <div class="actions">
+              <button class="adsave">Add</button>
+              <button class="adsave">Save</button>
+            </div>
           </div>
         </div>
       </section>
