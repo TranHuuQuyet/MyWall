@@ -188,14 +188,15 @@ h1 {
   }
   .management-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .content {
     margin: 0;
     width: 100%;
   }
   .content .container {
-    padding: 0px 100px;
+    margin: 20px;
   }
   .sidebar {
     gap: 20px;
@@ -220,5 +221,8 @@ h1 {
     height: 95px;
     background: #202020;
     padding-top: 55px;
+  }
+  .content > .item .add-btn {
+    margin: auto 0;
   }
 }
