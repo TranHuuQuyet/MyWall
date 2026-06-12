@@ -7,17 +7,16 @@
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
-
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
-
   opacity: 0;
   visibility: hidden;
 }
 
 .modal:target {
-  opacity: 2;
+  opacity: 1;
   visibility: visible;
 }
 
@@ -75,20 +74,20 @@ input {
 }
 .close {
   position: fixed;
-  width: 32px;
-  height: 32px;
   top: 15%;
-  left: 37%;
+  left: 36%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 .close svg {
   font-size: 32px;
+  fill: #ff8660;
 }
 .close:hover {
-  background: #73797ce1;
-  border-radius: 20px;
+  background: rgba(255, 133, 96, 0.315);
 }

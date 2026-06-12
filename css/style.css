@@ -338,8 +338,7 @@ footer {
   cursor: pointer;
   transition: 0.3s;
 }
-
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .projects .container {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
@@ -368,4 +367,6 @@ footer {
     justify-content: center;
     gap: 36px;
   }
+}
+@media (max-width: 767px) {
 }
