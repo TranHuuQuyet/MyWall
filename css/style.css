@@ -4,6 +4,7 @@
 :root {
   --primary-gradient: linear-gradient(#ff8660, #d5491d);
   --primary-color: rgb(255, 255, 255);
+  --second-color: rgba(44, 42, 42, 0.486);
 }
 :root {
   --container: 660px;
@@ -31,7 +32,7 @@ header {
   width: 100%;
   min-height: 70px;
   padding: 10px var(--space-x);
-  background-color: rgba(44, 42, 42, 0.486);
+  background: var(--second-color);
   backdrop-filter: blur(15px);
   display: flex;
   align-items: center;
@@ -62,7 +63,7 @@ ul a:hover {
 }
 ul .clicklogin {
   font-family: "Bitcount Grid Single", system-ui;
-  background-color: rgba(44, 42, 42, 0.486);
+  background-color: var(--second-color);
   border-radius: 10px;
   width: 80px;
   height: 30px;
@@ -77,6 +78,9 @@ ul .clicklogin:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+header > a {
+  text-decoration: none;
 }
 h1 {
   color: var(--primary-color);

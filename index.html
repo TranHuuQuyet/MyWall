@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orange_Dev|Trần Hữu Quyết</title>
+    <link rel="stylesheet" href="css/style_login.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,21 +22,48 @@
   </head>
   <body>
     <header>
-      <h1>TRANHUUQUYET<span class="gradient-text">Orange_Dev</span></h1>
+      <a href="index.html"
+        ><h1>TRANHUUQUYET<span class="gradient-text">Orange_Dev</span></h1></a
+      >
       <nav>
         <ul class="menu">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
           <li>
-            <a href="login.html">
+            <a href="#login-box">
               <button class="clicklogin">Login</button>
             </a>
           </li>
         </ul>
       </nav>
     </header>
+    <div id="login-box" class="modal">
+      <div class="login-form">
+        <a href="#" class="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
+            />
+          </svg>
+        </a>
+        <h1 class="gradient-text">Orange_Dev</h1>
+        <h2>Welcome to Orange_Dev</h2>
 
+        <input type="text" placeholder="(click ĐĂNG NHẬP để truy cập admin)" />
+        <input type="password" placeholder="Password" />
+        <a href="admin.html">
+          <button class="click">ĐĂNG NHẬP</button>
+        </a>
+        <p>QUÊN MẬT KHẨU?</p>
+      </div>
+    </div>
     <main>
       <section class="about" id="about">
         <img src="images/img.jpg" alt="avatar" />

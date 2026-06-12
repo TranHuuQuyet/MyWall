@@ -1,31 +1,32 @@
+/* * {
+  box-sizing: border-box;
+}
 :root {
   --primary-gradient: linear-gradient(#ff8660, #d5491d);
   --primary-color: rgb(255, 255, 255);
-  --second-color: rgba(44, 42, 42, 0.486);
 }
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+body {
+  background-color: #000;
+  color: #c5c5c5;
 
+  position: relative;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  opacity: 0;
-  visibility: hidden;
+  height: 100vh;
 }
-
-.modal:target {
-  opacity: 2;
-  visibility: visible;
+h1 {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
 }
-
-.login-form h2 {
-  font-size: 20px;
-  color: var(--primary-color);
+h2 {
+  color: #ffffff;
 }
-.login-form {
+#login-box {
   font-family: "Noto Sans", sans-serif;
   font-weight: 1000;
   background-color: rgba(32, 32, 32, 0.92);
@@ -39,7 +40,6 @@
   border-radius: 15px;
   border-width: 1px;
   border-color: #ff8660;
-  padding: 30px;
 }
 input {
   background: #111;
@@ -65,30 +65,47 @@ input {
 .click:hover {
   background: linear-gradient(#ff8660, #d5481d8a);
 }
-.login-form p {
+main p {
   margin-top: 30px;
   color: #c5c5c5;
   cursor: pointer;
 }
-.login-form p:hover {
+main p:hover {
   color: #ff8660;
 }
-.close {
+body > a {
   position: fixed;
   width: 32px;
   height: 32px;
-  top: 15%;
-  left: 37%;
+  top: 5%;
+  left: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
 }
-.close svg {
+body > a svg {
   font-size: 32px;
 }
-.close:hover {
+body > a:hover {
   background: #73797ce1;
   border-radius: 20px;
 }
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal:target {
+  opacity: 1;
+  visibility: visible;
+} */
