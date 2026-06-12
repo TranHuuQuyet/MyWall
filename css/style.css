@@ -5,6 +5,8 @@
   --primary-gradient: linear-gradient(#ff8660, #d5491d);
   --primary-color: rgb(255, 255, 255);
   --second-color: rgba(44, 42, 42, 0.486);
+  --thirt-color: aliceblue;
+  --item-color: #c5c5c5;
 }
 :root {
   --container: 660px;
@@ -96,7 +98,7 @@ h2 {
 }
 hr {
   border: none;
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid var(--primary-color);
   margin: 0;
 }
 section {
@@ -116,12 +118,7 @@ section {
   border-radius: 50%;
   object-fit: cover;
 }
-.about img:hover {
-  box-shadow:
-    0 0 10px #d5491d,
-    0 0 20px #d5491d,
-    0 0 40px rgba(213, 73, 29, 0.5);
-}
+
 .tech .icon {
   display: flex;
   justify-content: center;
@@ -130,11 +127,11 @@ section {
 .tech svg {
   border-radius: 5px;
   width: 40px;
-  fill: #c5c5c5;
+  fill: var(--item-color);
   height: 40px;
 }
 .tech svg:hover {
-  fill: #c5c5c5b7;
+  fill: #c5c5c575;
 }
 .hero {
   padding-top: 0px;
@@ -155,7 +152,7 @@ button:hover {
 }
 
 .hero > button:hover .cta {
-  color: white;
+  color: var(--primary-color);
 }
 .contactme {
   border-width: 0;
@@ -163,17 +160,17 @@ button:hover {
 .contactme:hover {
   background-color: black;
   color: var(--primary-color);
-  border-color: bisque;
+  border-color: var(--thirt-color);
   border-width: 2px;
 }
 .download {
   background-color: black;
   color: var(--primary-color);
-  border-color: bisque;
+  border-color: var(--thirt-color);
 }
 .download:hover {
   background-color: var(--primary-color);
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .projects h3 {
   font-size: 30px;
@@ -191,7 +188,7 @@ button:hover {
 .projects .container div {
   width: 100%;
   min-height: 200px;
-  background-color: rgba(44, 42, 42, 0.486);
+  background-color: var(--second-color);
   border-radius: 10px;
 }
 .pj1,
@@ -220,27 +217,27 @@ button:hover {
 }
 .pj1 svg {
   position: absolute;
-  fill: aliceblue;
+  fill: var(--thirt-color);
   bottom: 5%;
   right: 2%;
 }
 .pj2 svg {
   position: absolute;
-  fill: aliceblue;
+  fill: var(--thirt-color);
   bottom: 5%;
   right: 2%;
 }
 
 .pj2 :nth-child(2) {
   position: absolute;
-  color: aliceblue;
+  color: var(--thirt-color);
   bottom: 7%;
   left: 5%;
   font-size: 7px;
 }
 .pj2 :nth-child(3) {
   position: absolute;
-  color: aliceblue;
+  color: var(--thirt-color);
   top: 82%;
   left: 5%;
   font-size: 15px;
@@ -248,14 +245,14 @@ button:hover {
 }
 .pj1 :nth-child(2) {
   position: absolute;
-  color: aliceblue;
+  color: var(--thirt-color);
   bottom: 7%;
   left: 5%;
   font-size: 7px;
 }
 .pj1 :nth-child(3) {
   position: absolute;
-  color: aliceblue;
+  color: var(--thirt-color);
   top: 82%;
   left: 5%;
   font-size: 15px;
@@ -272,7 +269,7 @@ button:hover {
 }
 
 footer {
-  background-color: rgba(44, 42, 42, 0.486);
+  background-color: var(--second-color);
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -318,7 +315,7 @@ footer {
 .ctack svg {
   width: 25px;
   height: 25px;
-  fill: rgb(255, 255, 255);
+  fill: var(--primary-color);
 }
 .endsocial {
   padding: 40px 0 0;
@@ -334,10 +331,18 @@ footer {
   margin-bottom: 40px;
   width: 25px;
   height: 25px;
-  fill: rgb(255, 255, 255);
+  fill: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
 }
+.menu-side {
+  display: none;
+  z-index: 1000;
+}
+.hamburger {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .projects .container {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -367,6 +372,92 @@ footer {
     justify-content: center;
     gap: 36px;
   }
+  .login-form {
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+  }
 }
 @media (max-width: 767px) {
+  :root {
+    --space-x: 16px;
+  }
+
+  header {
+    min-height: 50px;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+
+  header h1 {
+    font-size: 15px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(44, 42, 42, 0.95);
+    backdrop-filter: blur(10px);
+    transform: translateY(-140%);
+    transition: transform 0.5s ease;
+    padding: 5px;
+  }
+
+  .menu-side:checked ~ header nav {
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+  nav .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  section {
+    padding: 60px var(--space-x);
+  }
+  .about {
+    padding-top: 100px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .hero button {
+    width: 100%;
+    max-width: 200px;
+    margin: 5px;
+  }
+  .projects .container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .endsocial ul {
+    gap: 20px;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .ctack p {
+    overflow-wrap: anywhere;
+  }
+  .login-form {
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+  }
 }
